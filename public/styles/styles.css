@@ -1,0 +1,289 @@
+/* Your styles go in this file */
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #fbfbfb;
+    color: rgb(0, 0, 0);
+    background-image: radial-gradient(rgb(189, 189, 189) 3.5%, transparent 0);
+    background-size: 57px 57px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#recipes {
+    text-align: justify;
+}
+
+.recipe {
+    width: 30%;
+    display: inline-block;
+    border: 1px solid grey;
+    margin: 15px;
+}
+
+.recipe img {
+    width: 100%;
+    height: 300px;
+}
+h1{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    /* position: absolute; */
+    /* bottom: 3%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -0%); */
+    color: #505050;
+    font-weight: 100;
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#pitem:hover{
+    color: #ff6797;
+    transition: 0.3s;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    margin: 0 0;
+    color: rgb(37, 37, 37);
+    table-layout: fixed;
+    border-bottom: 2px solid #fbfbfb;
+    width: 100%;
+  }
+  th {
+    background-color: #f4f4f4;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 2px;
+    text-align: left;
+    height: auto;
+  }
+  #bigText{
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 2px;
+    text-align: left;
+    height: auto;
+  }
+  th#thinText:nth-child(1) {
+    font-size: 1.3rem;
+    font-weight: 10;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 2px;
+    text-align: center;
+    vertical-align: bottom;
+    height: auto;
+  }
+  th#thinText{
+    font-size: 1.3rem;
+    font-weight: 10;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 2px;
+    height: auto;
+    vertical-align: bottom;
+  }
+    td {
+        padding: 2px;
+        height: 10px;
+        
+        font-size: 1.2rem;
+        font-weight: 700;
+        background-color: #f0f0f0;
+        border-bottom: 2px solid #fbfbfb;
+    
+    }
+   
+#submit_button {
+    height: 37px;
+    color: rgb(72, 72, 72);
+    background-color: #fbfbfb;
+    border: 1px solid #d2d2d2;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 800;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+#save_button {
+  height: 37px;
+  color: rgb(72, 72, 72);
+  background-color: #fbfbfb;
+  border: 1px solid #d2d2d2;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 800;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+#submit_button:hover {
+    background-color: #000000;
+    color: #fff;
+    transition: 0.3s;
+}
+#save_button:hover {
+  background-color: #000000;
+  color: #fff;
+  transition: 0.3s;
+}
+
+button {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    width: 20%;
+    height: 32px;
+    overflow: hidden;
+    border: none;
+    background-color: #e6e6e6;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+  }
+  [id^="btn"]::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    color: rgb(122, 122, 122);
+    content: '+';
+    transition: all .3s;
+  }
+  [id^="btn"]::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: 'ADD';
+    background-color: #000000;
+    font-weight: 800;
+    color: #fff;
+    transition: all .3s;
+  }
+  [id^="btn"]:hover::before {
+    top: -60px;
+  }
+  [id^="btn"]:hover::after {
+    top: 0;
+  }
+  [id^="deleteBtn"], [id^="upBtn"], [id^="downBtn"] {
+    width: 2.7vw;
+    height: 2.7vw;
+    text-align: center;
+    border-radius: 0.4vw;
+    border: none;
+    background-color: #ededed5a;
+    cursor: pointer;
+    font-size: 1.8vw;
+  }
+
+  [id^="deleteBtn"]::before{
+    content: "✖";
+  }
+  [id^="upBtn"]::before{
+    content: "⬆";
+  }
+  [id^="downBtn"]::before{
+    content: "⬇";
+  }
+    [id^="deleteBtn"]:hover, [id^="upBtn"]:hover, [id^="downBtn"]:hover {
+        background-color: #000000;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+input {
+    margin-top: 10px;
+    align-self: auto;
+    height: 32px;
+    width: 50%;
+    border: 1px solid #d2d2d2;
+    background-color: #ececec;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+input::placeholder {
+    color: #c4c4c4;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+}
+img {
+    border-radius: 4%;
+  }
+.rectangle {
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(-36deg, #89c2ff, #d1b4ff, #f8c1ff, #ffd0fe, #796dff, #83aaff, #efe5ff);
+	background-size: 400% 400%;
+	animation: gradient 16s ease infinite;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.rectanglePlaylist {
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(-87deg, #ffd0fe, #796dff, #83aaff,  #d1b4ff, #f8c1ff, #ffd0fe, #ddc7ff);
+	background-size: 400% 400%;
+	animation: gradient 16s ease infinite;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.rectanglePlaylist2 {
+    z-index: 999;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(-87deg, #ffd0fe, #796dff, #83aaff,  #d1b4ff, #f8c1ff, #ffd0fe, #ddc7ff);
+	background-size: 400% 400%;
+	animation: gradient 16s ease infinite;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

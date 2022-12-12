@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> {{title}} </title>
+  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+   {{> header}}
+   
+    <table>
+        <tr>
+            <th style="width:10%">ISBN</th>
+            <th style="width:10%">Quantity</th>
+            <th style="width:30%"></th>
+        </tr>
+        <tr>
+            <td><input type="Text" id="cart_ISBN_text" style="width:90%"></td>
+            <td><input type="Text" id="cart_quantity_text" style="width:90%"></td>
+            
+        </tr>
+
+    </table>
+    <input type="button" id="add_to_cart" value="Add to Cart">
+    <input type="button" id="place_order" value="Place Order">
+    <br>
+    <table id="cart">
+        <tbody id="cartBody">
+        <tr>
+            <th style="width:30%"></th>
+            <th style="width:10%"></th>
+            <th style="width:30%"></th>
+        </tr>
+        </tbody>
+    </table>
+   
+   <table id="bookTable">
+    <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Publisher</th>
+        <th>Price</th>
+        <th>Quantity Remaining</th>
+        
+    </tr>
+   {{#showBooks books}}{{/showBooks}}
+   </table>
+
+  
+  <script src="js/order.js"></script>
+</body>
+</html>

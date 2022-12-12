@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> {{title}} </title>
+  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+   {{> header}}
+   <table id="bookTable">
+    <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Publisher</th>
+        <th>Price</th>
+        <th>Quantity Remaining</th>
+        
+    </tr>
+   {{#showBooks books}}{{/showBooks}}
+   </table>
+
+  
+  
+</body>
+</html>

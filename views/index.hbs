@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+  <title> {{title}} </title>
+  <style>
+    h2{
+      text-align: center;
+      font-family: sans-serif;
+    }
+    input[type=text], select {
+      width: 50%;
+      padding: 12px 20px;
+      margin-left: 25%;
+      display: inline-block;
+
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=submit] {
+        display: block;
+        
+        font-size:larger;
+        font-family: sans-serif;
+        color:white;
+        background-color: #48C9B0;;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        text-decoration: none;
+        border:none;
+        border-bottom:solid 2px #16A085;
+        
+    }
+    input[type=submit]:hover {
+      background-color: #16A085;
+    }
+    input[type=submit]:last-of-type {
+      border-bottom:none
+    }
+    #submit_buttons{
+      width:50%;
+      margin-left:25%
+    }
+
+
+  </style>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+   {{> header}}
+   
+
+    <h1 style="text-align: center; font-family: sans-serif;">{{title}}</h1>
+   <h1>{{body}}</h1>
+   <br>
+   
+
+  
+  
+</body>
+</html>
